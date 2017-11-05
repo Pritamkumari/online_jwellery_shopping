@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<title>Shopping Car</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<style>
+			body{
+				background: silver;
+			}
+			.panel{
+				border-radius: 0;
+			}
+			.btn {
+				border-radius: 0;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<?php include 'includes/header.php'; ?>
+		<div class="container">
+			<div class="page-header">
+				<h2>Checkout</h2>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">Order Detail</div>
+				<div class="panel-body">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>S. No.</th>
+								<th>Item</th>
+								<th>qty</th>
+								<th width="5%">Delete</th>
+								<th class="text-right">Price</th>
+								<th class="text-right">Total</th>
+								
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>watch</td>
+								<td>1</td>
+								<td><button class="btn btn-danger btn-sm">Delete</button></td>
+								<td class="text-right"><b>100/=</b></td>
+								<td class="text-right"><b>100/=</b></td>
+								
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>cup set</td>
+								<td>4</td>
+								<td><button class="btn btn-danger btn-sm">Delete</button></td>
+								<td class="text-right"><b>100/=</b></td>
+								<td class="text-right"><b>400/=</b></td>
+								
+							</tr>
+						</tbody>
+					</table>
+					<table class="table">
+						<thead>
+							<tr>
+								<th class="text-center" colspan="2">Oder Summary</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Subtotal</td>
+								<td class="text-right"><b>500/=</b></td>
+							</tr>
+							<tr>
+								<td>Delivery Charges</td>
+								<td class="text-right"><b>Free</b></td>
+							</tr>
+							<tr>
+								<td>Grand Total</td>
+								<td class="text-right"><b>500/=</b></td>
+							</tr>
+						</body>
+					</table>
+				</div>
+			</div>
+		</div>
+		<br><br><br><br><br>
+		<?php include 'includes/footer.php'; ?>
+	</body>
+</html>
